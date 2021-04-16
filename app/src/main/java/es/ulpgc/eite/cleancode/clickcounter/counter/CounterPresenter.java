@@ -92,21 +92,25 @@ public class CounterPresenter implements CounterContract.Presenter {
 
   @Override
   public void onDestroy() {
+
     // Log.e(TAG, "onDestroy()");
   }
 
   @Override
   public void onClicksPressed() {
+    mediator.getInstance().getClicksState();
     // Log.e(TAG, "onClicksPressed()");
   }
 
   @Override
   public void onResetPressed() {
+    mediator.resetInstance();
     // Log.e(TAG, "onResetPressed()");
   }
 
   @Override
   public void onIncrementPressed() {
+    mediator.getInstance().getCounterState();
     // Log.e(TAG, "onIncrementPressed()");
   }
 

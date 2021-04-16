@@ -16,6 +16,7 @@ public class CounterActivity
 
   public static String TAG = CounterActivity.class.getSimpleName();
 
+
   private CounterContract.Presenter presenter;
 
   @Override
@@ -27,6 +28,7 @@ public class CounterActivity
     if (savedInstanceState == null) {
       AppMediator.resetInstance();
     }
+
 
 
     // do the setup
@@ -43,6 +45,7 @@ public class CounterActivity
   @Override
   protected void onResume() {
     super.onResume();
+   // getSavedStateRegistry();
 
     // load the data
     presenter.onResume();
