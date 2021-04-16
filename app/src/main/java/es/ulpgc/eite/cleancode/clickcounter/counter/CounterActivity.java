@@ -28,6 +28,7 @@ public class CounterActivity
       AppMediator.resetInstance();
     }
 
+
     // do the setup
     CounterScreen.configure(this);
 
